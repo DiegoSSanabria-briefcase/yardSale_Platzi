@@ -31,6 +31,10 @@ body{
     width: 300px;
 }
 
+.recovery2{
+    justify-items: center;
+}
+
 .logo{
     display: none;
     justify-self: center;
@@ -102,6 +106,38 @@ body{
 .login-button{
     margin-top: 14px;
     margin-bottom: 30px;
+}
+
+.email-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 24px;
+
+    width: 132px;
+    height: 132px;
+
+    border-radius: 50%;
+
+    background-color: var(--text-input-field);
+}
+
+.email-image img{
+    width: 80px;
+}
+
+.resend{
+    font-size: var(--sm);
+}
+
+.resend span{
+    color: var(--very-light-pink);
+}
+
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
 }
 
 @media (max-width: 640px) {
