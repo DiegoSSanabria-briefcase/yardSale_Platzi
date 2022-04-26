@@ -51,6 +51,14 @@ body{
     font-size: var(--lg);   
 }
 
+.title-account{
+    text-align: start;
+
+    margin-bottom: 40px;
+
+    font-size: var(--lg);
+}
+
 .subtitle{
     text-align: center;
 
@@ -66,6 +74,12 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .form a {
     margin-bottom: 54px;
@@ -97,7 +111,9 @@ body{
     font-size: var(--md);
 }
 
-.input-email{
+.input-name,
+.input-email,
+.input-password {
     margin-bottom: 22px;
 }
 
@@ -173,10 +189,12 @@ body{
         display: block;
     }
     
-    .signup-button{
+    .signup-button, 
+    .save-button{
         position: fixed;
         bottom: 0;
         width: inherit;
         margin-bottom: 30px;
     }
+
 }   
