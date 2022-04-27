@@ -1,0 +1,93 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    margin: 0;
+    
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login {
+    display: grid;
+    place-items: center;
+    
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    width: 300px;
+}
+
+.title{
+    text-align: start;
+
+    margin-bottom: 40px;
+    
+    font-size: var(--lg);   
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}Create account
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    margin-bottom: 4px;
+    
+    font-weight: bold;
+    font-size: var(--sm);
+}
+
+.value {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+.secondary-button{
+    width: 100%;
+    height: 50px;
+
+    font-weight: bold;
+    font-size: var(--md);
+    cursor: pointer;
+
+    border: 1px solid var(--hospital-green);
+    border-radius: 8px;
+
+    background-color: var(--white);
+    color: var(--hospital-green);
+}
+
+.createaccount-button{
+    margin-top: 15px;
+}
+
+@media (max-width: 640px) {
+    
+    .form-container {
+        height: 100%;
+      }
+      .form {
+        height: 100%;
+        justify-content: space-between;
+    }
+}   
