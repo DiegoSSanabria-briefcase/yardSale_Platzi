@@ -18,7 +18,8 @@ body{
 
 .product-detail {
     width: 360px;
-    padding-bottom: 24px;
+    padding: 24px;
+    box-sizing: border-box;
     position: absolute;
     right: 0;
 }
@@ -28,6 +29,15 @@ body{
     flex-direction: column;
 }
 
+.title-container{
+    display: flex;
+
+}
+
+.title-container img{
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
 
 .title{
     font-size: var(--lg);
@@ -113,6 +123,10 @@ body{
 @media (max-width: 640px){
     .product-detail {
         width: 100%;
+    }
+
+    .title-container{
+        display: none;
     }
 
 }
